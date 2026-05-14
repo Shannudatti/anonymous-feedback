@@ -1,84 +1,66 @@
-// import "./App.css";
-
-// function App() {
-//   return (
-//     <div className="container">
-//       <div className="card">
-//         <h1>Anonymous Feedback 🤍</h1>
-
-//         <p>
-//           A safe space for your honest thoughts...
-//         </p>
-
-//         <form
-//           action="https://formsubmit.co/shanmukhanaidudatti@gmail.com"
-//           method="POST"
-//         >
-//           {/* Disable captcha */}
-//           <input type="hidden" name="_captcha" value="false" />
-
-//           {/* Email subject */}
-//           <input
-//             type="hidden"
-//             name="_subject"
-//             value="New Anonymous Feedback!"
-//           />
-
-//           {/* Thank you page */}
-//           <input
-//             type="hidden"
-//             name="_next"
-//             value="https://yourwebsite.vercel.app/thankyou"
-//           />
-
-//           <textarea
-//             name="feedback"
-//             placeholder="Type your thoughts here..."
-//             required
-//           ></textarea>
-
-//           <button type="submit">
-//             Send Anonymously
-//           </button>
-//         </form>
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default App;
 import "./App.css";
+import logo from "./assets/logo.png";
 
 function App() {
   return (
     <div className="container">
+
       <div className="card">
-        <h1>Anonymous Feedback 🤍</h1>
+
+        <div className="headingRow">
+
+          <img
+            src={logo}
+            alt="logo"
+            className="logo"
+          />
+
+          <h1>
+            We Appreciate Your
+            <span> Valuable Feedback</span>
+          </h1>
+
+        </div>
+
+      
 
         <p>
-          A safe space for your honest thoughts...
+          Your thoughts, suggestions, and honest words
+          mean a lot to us ✨
         </p>
 
-       <form action="https://api.web3forms.com/submit" method="POST">
+        <form
+          action="https://api.web3forms.com/submit"
+          method="POST"
+        >
 
-  <input
-    type="hidden"
-    name="access_key"
-    value="3db5ed67-1efe-4e9d-980a-ebb575005358"
-  />
+          <input
+            type="hidden"
+            name="access_key"
+            value="75ed810f-338c-4ac7-a5b9-5619404a7c35"
+          />
 
-  <textarea
-    name="feedback"
-    placeholder="Type your thoughts..."
-    required
-  ></textarea>
+          <input
+            type="hidden"
+            name="subject"
+            value="New Anonymous Feedback"
+          />
 
-  <button type="submit">
-    Send Anonymously
-  </button>
+          <textarea
+            name="feedback"
+            placeholder="Share your thoughts here..."
+            required
+          ></textarea>
 
-</form>
+          <button type="submit">
+            Send Feedback ✨
+          </button>
+
+        </form>
+
+
       </div>
+
     </div>
   );
 }
